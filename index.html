@@ -1,23 +1,25 @@
-
+<!-- display : flex
+eventlistener(click, ()=>  {})   in addition to click what does it take
+display : none
+line 41 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+N and T 
+media   
+   <link rel="stylesheet" type="text/css" href="styles.css">  -->
 
 <!DOCTYPE html>
 
-<html  
-lang="en" xmlns="http://www.w3.org/1999/xhtml"> 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"> 
+<title> "Resume For Firas Halabiya" </title>
 
-
-<head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    
-    <meta charset="utf-8">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="robots" content="index, follow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="device-width,initial-scale=0>
+  
  
-    <title> "سكس ello world XXXXXXXXXXX" </title>
-
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css">  
-    <meta name="description" content="A nice page">   
-    -->
+    <meta name="description" content="developer resume">   
+      
+    <head> 
     
     <style>
 
@@ -34,8 +36,8 @@ body {
   display: grid;
   place-items: center;
   perspective: 40em;
-  overflow: hidden;
- 
+ /*             overflow: hidden;       */
+  font-size: 2vh;
   
   
   * {
@@ -43,24 +45,13 @@ body {
   }
 }
 
-        .body2  {   
- font-size: .1vh;
-        }
-
-        .body3   {
- font-size: .8vh;       }
-            
-
 .scene  {
-    
-        position: absolute;
+     position: absolute;
   animation: scene 60s infinite linear;
   
   --duration: 4s;
-  right: 400px;
-  
-  
-}
+  right: 200px;
+        }
 
 @keyframes scene {
   to { rotate: y -1turn; }
@@ -186,44 +177,23 @@ body {
   40%, 55% { opacity: 1;}
 }
 
-#ww  {
-
-    width: 30vw;
-}
-
-#pepsi {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    color: black;
-}
-
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
 
 .header {
- position: absolute;
- width: 100%;
- height: 30px;   
- color: black;
- top: 100px;
- right: 400px;
+position: absolute;
+width: 90%;
+ height: 200px;   
+ color: rgb(26, 9, 187);
+ top: 20px;
+ left: 45vw;
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-        .head   {
-  position: absolute;
-  width: 95%;
-  height: 100px;
-  left: 0;          
-        }  
-
-.inside-head   {
+.inside-header    {
  box-shadow: 5px 5px 5px rgba(202, 109, 109, 0.7);
- font-size: 40px;
- font-family: 'Roboto', sans-serif;
-
+ font-size: 30px;
+ font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+    /*   font-style: strong italic;     */
  top: 50%; /* This positions the paragraph in the middle of the box */
   left: 50%; /* This positions the paragraph in the middle of the box */
   transform: translate(-50%, -50%); /* This ensures the paragraph is centered properly */
@@ -239,30 +209,32 @@ body {
 
         @keyframes  color1 {  
       0% {
-   background : blue;
+   background : gold;
    }
-   50% {
+   /*   50% {
    background : orange;
-   }
+   }     */
    100% {
-   background : green;
+   background : black;
    }
    } 
 
    @keyframes  color2 {  
     0% {
- background : gold;
+ background : black;
  }
- 50% {
+ /*     50% {
  background : red;
- }
+ }      */
  100% {
- background : blue;
+ background : gold;
  }
  } 
 
-        #section1 {
-            animation: color1 4s linear infinite; 
+ @media screen and (min-width: 600px)  {
+
+        #square1 {
+            animation: color1 4s linear infinite alternate; 
            /*  background-color: #f00;           red */
             position: absolute;
             top: 0;
@@ -272,56 +244,304 @@ body {
             opacity:.5;             /*    height: 33%;   */
         }
 
-        #section2 {
-            animation: color2 4s linear infinite; 
+        #square2 {
+            animation: color2 4s linear  infinite alternate; 
            /*   background-color: #0f0;                   green */      
             position: absolute;
             top: 100px;                    /*    top: 0;        */
             left: 100px;                   /*    left: 33%;      */
              width: 100px;             /*    width: 33%;       */
              height: 100px;   
-             opacity:.5;               /*    height: 33%;      */
+                     /*    height: 33%;      */
         }
 
-.pos  {
-    position:absolute;
-top: 50%;
-left: 50%;
 
-transform: translate(-50%, -50%);
-            text-align: center;
-color: black;
-}
-
-#horizontal {
-      
-      border-bottom: 4px solid;
-       
-      animation: color1 4s linear infinite; 
-      /*
-      width: 100%;
-      position: absolute;
-      left: 0;
-      transform: translate(0, 10%);      */
-  }                  
+        #square3 {
+            animation: color1 4s linear  infinite alternate; 
+           /*   background-color: #0f0;                   green */      
+            position: absolute;
+            top: 200px;                    /*    top: 0;        */
+            left: 0px;                   /*    left: 33%;      */
+             width: 100px;             /*    width: 33%;       */
+             height: 100px;   
+                          /*    height: 33%;      */
+        }
 
 
-</style>
+        #square4 {
+        animation: color2 4s linear  infinite alternate; 
+       /*   background-color: #0f0;                   green */      
+        position: absolute;
+        top: 300px;                    /*    top: 0;        */
+        left: 100px;                   /*    left: 33%;      */
+         width: 100px;             /*    width: 33%;       */
+         height: 100px;   
+               /*    height: 33%;      */
+    }
 
-</head>
+    #square5 {
+       animation: color1 4s linear  infinite alternate; 
+      /*   background-color: #0f0;                   green */      
+       position: absolute;
+       top: 400px;                    /*    top: 0;        */
+       left: 0px;                   /*    left: 33%;      */
+        width: 100px;             /*    width: 33%;       */
+        height: 100px;   
+                       /*    height: 33%;      */
+   }
 
-<!-- <button id="colorChangeButton">Change Color</button>    -->
-
-<body>
+   
+   #square6 {
+       animation: color2 4s linear  infinite alternate; 
+      /*   background-color: #0f0;                   green */      
+       position: absolute;
+       top: 500px;                    /*    top: 0;        */
+       left: 100px;                   /*    left: 33%;      */
+        width: 100px;             /*    width: 33%;       */
+        height: 100px;   
+                   /*    height: 33%;      */
+   }
 
  
-    <div class="scene" class="body3">
-        <div class="body" class="body2"></div>
+   #square7 {
+     animation: color1 4s linear  infinite alternate; 
+    /*   background-color: #0f0;                   green */      
+     position: absolute;
+     top: 600px;                    /*    top: 0;        */
+     left: 0px;                   /*    left: 33%;      */
+      width: 100px;             /*    width: 33%;       */
+      height: 100px;   
+                 /*    height: 33%;      */
+ }
+   
 
-        
-      
+ #square8 {
+   animation: color2 4s linear  infinite alternate; 
+  /*   background-color: #0f0;                   green */      
+   position: absolute;
+   top: 700px;                    /*    top: 0;        */
+   left: 100px;                   /*    left: 33%;      */
+    width: 100px;             /*    width: 33%;       */
+    height: 100px;   
+               /*    height: 33%;      */
+ }
+ }
+
+ 
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes  color10 {  
+      0% {
+   color : gold;
+   }
+   /*   50% {
+   background : orange;
+   }     */
+   100% {
+   color : red;
+   }
+   } 
+
+   @keyframes  color20 {  
+    0% {
+ color : red;
+ }
+ /*     50% {
+ background : red;
+ }      */
+ 100% {
+ color : gold;
+ }
+ } 
+
+.para {
+  display : inline;
+position:absolute;
+width: 80%;
+font-size: 25px;
+/* transform: translate(-50%, 0);    */
+}
+
+.para1    {
+animation: color20 4s linear  infinite alternate;  
+  left: 210px;   
+top: 135px;
+}
+
+.para2   {
+ animation: color10 4s linear  infinite alternate;   
+ top: 210px;
+ left: 110px;   
+  }
+
+.para3  {
+  animation: color20 4s linear  infinite alternate;   
+  top: 320px;
+  left: 210px;     
+}
+
+.para4   {
+  animation: color10 4s linear  infinite alternate;   
+  top: 420px;
+  left: 110px;  
+}
+
+.para5   {
+  animation: color20 4s linear  infinite alternate;   
+  top: 535px;
+  left: 210px;  
+}
+
+.para6  {
+  animation: color10 4s linear  infinite alternate;   
+  top: 635px;
+  left: 110px;      
+}
+
+.para7  {
+  top: 735px;
+  left: 210px;
+   font-size: 15px;    
+}
+
+.para7:hover    {
+color: rgb(64, 12, 99);
+}
+
+
+
+
+#horizontal-1 {
+    animation: color2 4s linear infinite; 
+    position:absolute;
+    top: 100px;
+    left:100px;
+    width: 70vw; 
+    height: 1px;  
+    }                  
+
+  #horizontal-2 {
+  animation: color1 4s linear infinite; 
+  position:absolute;
+  top: 200px;
+  left:100px;
+  width: 70vw; 
+  height: 1px;  
+  }                  
+
+  #horizontal-3 {
+  animation: color2 4s linear infinite; 
+  position:absolute;
+  top: 300px;
+  left: 100px;
+  width: 70vw; 
+  height: 1px;  
+  }                  
+
+#horizontal-4 {
+  animation: color1 4s linear infinite; 
+  position:absolute;
+  top: 400px;
+  left: 100px;
+  width: 70vw; 
+  height: 1px;  
+  }                 
+  
+#horizontal-5 {
+  animation: color2 4s linear infinite; 
+  position:absolute;
+  top: 500px;
+  left: 100px;
+  width: 70vw; 
+  height: 1px;  
+  }                   
+  
+#horizontal-6 {
+  animation: color1 4s linear infinite; 
+  position:absolute;
+  top: 600px;
+  left: 100px;
+  width: 70vw; 
+  height: 1px;  
+  }                  
+  
+  #horizontal-7 {
+  animation: color2 4s linear infinite; 
+  position:absolute;
+  top: 700px;
+  left: 100px;
+  width: 70vw; 
+  height: 1px;  
+  }                  
+
+.text-shade {
+  text-shadow: 2px 2px 2px grey;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+#banner {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(270deg, rgb(64, 12, 99), white);
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease-in-out infinite;
+  font size : 10vw;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+}
+
+
+@media screen and (max-width: 600px)  {
+        .scene  {     right: 50%;  
+          flex-direction: column;  
+          transform: translate(-50%, 0);     
+        }
+    .square1 {    width: 0;  
+                  height: 0;       }
+    .square2 {    
+                    width: 0; 
+                    height: 0;       }
+    .square3 {      width: 0;   
+                    height: 0;       }
+    .square4 {      width: 0;   
+                    height: 0;       } 
+    .square5 {      width: 0;  
+                    height: 0;       }
+    .square6 {     display : 10vw;      }
+    .square7 {     display : 10vw;      }
+     
+     .para1    {   left : 1vw;     }
+     .para2    {   left : 1vw;     }
+     .para3    {   left : 1vw;     }
+     .para4    {   left : 1vw;     }
+     .para5    {   left : 1vw;     }
+     .para6    {   left : 1vw;     }
+     .para7    {   left : 1vw;     }
+     }         
+</style>
+</head>
+<body>   
+        <div class="scene">
+        <div class="body"></div>    
         <div class="mainStick">
-          <div class="stick"><i style="--i: 0;"></i><i style="--i: 1;"></i><i style="--i: 2;"></i><i style="--i: 3;"></i><i style="--i: 4;"></i><i style="--i: 5;"></i><i style="--i: 6;"></i><i style="--i: 7;"></i></div>
+        <div class="stick"><i style="--i: 0;"></i><i style="--i: 1;"></i><i style="--i: 2;"></i><i style="--i: 3;"></i><i style="--i: 4;"></i><i style="--i: 5;"></i><i style="--i: 6;"></i><i style="--i: 7;"></i></div>
         </div>
         
         <div class="sticks">
@@ -334,44 +554,46 @@ color: black;
           <div class="stick" style="--s: 6"><i style="--i: 0;"></i><i style="--i: 1;"></i><i style="--i: 2;"></i><i style="--i: 3;"></i><i style="--i: 4;"></i><i style="--i: 5;"></i><i style="--i: 6;"></i><i style="--i: 7;"></i></div>
           <div class="stick" style="--s: 7"><i style="--i: 0;"></i><i style="--i: 1;"></i><i style="--i: 2;"></i><i style="--i: 3;"></i><i style="--i: 4;"></i><i style="--i: 5;"></i><i style="--i: 6;"></i><i style="--i: 7;"></i></div>
         </div>
-        
+        </div>
+ 
+  <div id="square1"></div>
+  <div id="square2"></div>
+  <div id="square3"></div>
+  <div id="square4"></div>
+  <div id="square5"></div>
+  <div id="square6"></div>
+  <div id="square7"></div>
+  <div id="square8"></div>
+
+      <div class="header">      
+      <p class="inside-header text-shade">    RESUME FOR FIRAS HALABIYA</p>
       </div>
+      <h1 id="banner">Front-End Dynamic Design & Back-End</h1> 
 
+
+      <h2 class="para para1">Programing Languages: C++ -- html/css/Javascript <br>
+                             Typescript -- Node.js -- json/XML-- Ajax -- SASS </h2>
+
+
+      <h2 class="para para2">React-- Angular -- Ember -- Vue -- Django--Express <br>
+                             Bootstrap -- mySQL -- Python/Pandas etc.</h2>
+
+    <h2 class="para para3"> Master Degree in Structural Eng. - Concordia Univ. - Montreal - Canada  2008</h2>
     
-    <!--
-<script>
+    <h2 class="para para4">Engineering Softwares: AUTOCAD -- Hypermesh -- NASTRAN -- ETABS -- STAAD -- Prokon etc.</h2> 
 
-const canvas = document.getElementById("scene");
-const ctx = canvas.getContext('2d');
+    <h2 class="para para5">Looking for remote work or free lance work</h2> 
 
-canvas.width = window.innerWidth*0.2;
-canvas.height = window.innerHeight;
+    <h2 class="para para6">Tel: ++ 964 790 448 8782 </h2> 
+    <a href="mailto:fhalabiya@gmail.com" class="para para7">fhalabiya@gmail.com</a>
 
-</script>        -->
-
-  <div id="section1"></div>
-  <div id="section2"></div>
-
-
-    <div class="head" class="header">      
-       <p class="inside-head">    RESUME FOR FIRAS HALABIYA</p>
-    </div>
-
-
-<div class="pos">
-    <h2>Master Degree in Structural Eng. - Concordia Univ. - Montreal - Canada  2008</h2>
-
-<span id="#horizontal"></span>
-
-
-    <h2>Programing Languages: C++ -- HTML/CSS/Javascript -- PYTHON/PANDAS </h2>
-
-    <p id="#horizontal"></p>
-
-
-    <h2>Engineering Softwares: AUTOCAD -- Hypermesh -- NASTRAN -- ETABS -- STAAD</h2> 
-
-
+   <div id="horizontal-1"></div>
+   <div id="horizontal-2"></div>
+   <div id="horizontal-3"></div>
+   <div id="horizontal-4"></div>
+   <div id="horizontal-5"></div>
+   <div id="horizontal-6"></div>
+   <div id="horizontal-7"></div> 
 
 </body>
 
